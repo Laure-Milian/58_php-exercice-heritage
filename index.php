@@ -1,7 +1,7 @@
 <?php
 require 'lib/Car.php';
 require 'lib/MyCar.php';
-$car = new MyCar();
+$car = new MyCar("Ford", "Beaucoup", true, true, 4);
 ?><!DOCTYPE html>
 <html lang="en">
 <head>

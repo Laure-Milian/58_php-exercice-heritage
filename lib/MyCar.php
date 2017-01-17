@@ -8,12 +8,12 @@ class MyCar extends Car {
 	private $abs;
 	private $doors;
 
-	public function __construct() {
-		parent::setManufacturer("Ford");
-		parent::setKilometrage("Beaucoup");
-		parent::setAirbag(true);
-		parent::setAbs(true);
-		parent::setDoors(4);
+	public function __construct($manufacturer, $km, $airbag, $abs, $doors) {
+		parent::setManufacturer($manufacturer);
+		parent::setKilometrage($km);
+		parent::setAirbag($airbag);
+		parent::setAbs($abs);
+		parent::setDoors($doors);
 	}
 	
 }
