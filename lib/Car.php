@@ -17,6 +17,10 @@ class Car {
 		return $this->wheels;
 	}
 
+	public function setWheels($wheels) {
+		$this->wheels = $wheels;
+	}
+
 	/**
 	 * Retrourne une chaîne de caractère
 	 * 
@@ -28,6 +32,14 @@ class Car {
 
 	public function setManufacturer($name) {
 		$this->manufacturer = $name;
+	}
+
+	public function getKilometrage() {
+		return $this->kilometrage;
+	}
+
+	public function setKilometrage($km) {
+		$this->kilometrage = $km;
 	}
 
 	/**
@@ -48,6 +60,22 @@ class Car {
 	 */
 	public function setAirbag($available) {
 		$this->airbag = $available;
+	}
+
+	public function getAbs() {
+		return $this->abs;
+	}
+
+	public function setAbs($available) {
+		$this->abs = $available;
+	}
+
+	public function getDoors() {
+		return $this->doors;
+	}
+
+	public function setDoors($doors) {
+		$this->doors = $doors;
 	}
 
 }
