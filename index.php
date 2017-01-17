@@ -93,12 +93,12 @@ $car = new MyCar("Ford", "Beaucoup", true, true, 4);
 	}
 
 	$data = array(
-		$car->getWheels(), 
-		$car->getManufacturer(), 
-		$car->getKilometrage($kilometrage), 
-		$car->getAirbag($airbag), 
-		$car->getAbs($abs), 
-		$car->getDoors($doors)
+		'wheels' => $car->getWheels(), 
+		'manufacturer' => $car->getManufacturer(), 
+		'kilometrage' => $car->getKilometrage($kilometrage), 
+		'airbag' => $car->getAirbag($airbag), 
+		'abs' => $car->getAbs($abs), 
+		'doors' => $car->getDoors($doors)
 	);
 
 	$car->SaveFile($data);
