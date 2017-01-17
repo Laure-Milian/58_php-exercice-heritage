@@ -92,6 +92,17 @@ $car = new MyCar("Ford", "Beaucoup", true, true, 4);
 		$car->setDoors($doors);
 	}
 
+	$data = array(
+		$car->getWheels(), 
+		$car->getManufacturer(), 
+		$car->getKilometrage($kilometrage), 
+		$car->getAirbag($airbag), 
+		$car->getAbs($abs), 
+		$car->getDoors($doors)
+	);
+
+	$car->SaveFile($data);
+
 	?>
 	
 
@@ -102,6 +113,7 @@ $car = new MyCar("Ford", "Beaucoup", true, true, 4);
 	<p>Airbag : <?= $car->getAirbag()?></p>
 	<p>Abs : <?= $car->getAbs()?></p>
 	<p>Nombre de portes : <?= $car->getDoors()?></p>
+
 
 
 </body>
